@@ -1,7 +1,7 @@
 #include <iostream>
 #include <time.h>
 using namespace std;
-short checknum(short, short);
+void checknum(short, short);
 
 int main()
 {
@@ -20,7 +20,7 @@ int main()
 	cout << "You made " << made << " guesses\n";
 	return (0);
 }
-short checknum(short guess, short random)
+void checknum(short guess, short random)
 {
 	if (guess < random) 
 	{
@@ -34,5 +34,4 @@ short checknum(short guess, short random)
 	{
 		cout << "Congratulations!\n";
 	}
-	return (guess, random);
 }
